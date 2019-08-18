@@ -1,0 +1,671 @@
+1.Calculate Circle Area using Java Example
+===========================================
+/*
+        Calculate Circle Area using Java Example
+        This Calculate Circle Area using Java Example shows how to calculate
+        area of circle using it's radius.
+*/
+ 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+ 
+public class CalculateCircleAreaExample {
+ 
+        public static void main(String[] args) {
+               
+                int radius = 0;
+                System.out.println("Please enter radius of a circle");
+               
+                try
+                {
+                        //get the radius from console
+                        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                        radius = Integer.parseInt(br.readLine());
+                }
+                //if invalid value was entered
+                catch(NumberFormatException ne)
+                {
+                        System.out.println("Invalid radius value" + ne);
+                        System.exit(0);
+                }
+                catch(IOException ioe)
+                {
+                        System.out.println("IO Error :" + ioe);
+                        System.exit(0);
+                }
+               
+                /*
+                 * Area of a circle is
+                 * pi * r * r
+                 * where r is a radius of a circle.
+                 */
+               
+                //NOTE : use Math.PI constant to get value of pi
+                double area = Math.PI * radius * radius;
+               
+                System.out.println("Area of a circle is " + area);
+        }
+}
+ 
+/*
+Output of Calculate Circle Area using Java Example would be
+Please enter radius of a circle
+19
+Area of a circle is 1134.1149479459152
+*/
+
+2.Calculate Circle Perimeter using Java Example
+===============================================
+/*
+        Calculate Circle Perimeter using Java Example
+        This Calculate Circle Perimeter using Java Example shows how to calculate
+        Perimeter of circle using it's radius.
+*/
+ 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+ 
+public class CalculateCirclePerimeterExample {
+ 
+        public static void main(String[] args) {
+               
+                int radius = 0;
+                System.out.println("Please enter radius of a circle");
+               
+                try
+                {
+                        //get the radius from console
+                        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                        radius = Integer.parseInt(br.readLine());
+                }
+                //if invalid value was entered
+                catch(NumberFormatException ne)
+                {
+                        System.out.println("Invalid radius value" + ne);
+                        System.exit(0);
+                }
+                catch(IOException ioe)
+                {
+                        System.out.println("IO Error :" + ioe);
+                        System.exit(0);
+                }
+               
+                /*
+                 * Perimeter of a circle is
+                 * 2 * pi * r
+                 * where r is a radius of a circle.
+                 */
+               
+                //NOTE : use Math.PI constant to get value of pi
+                double perimeter = 2 * Math.PI * radius;
+               
+                System.out.println("Perimeter of a circle is " + perimeter);
+        }
+}
+ 
+/*
+Output of Calculate Circle Perimeter using Java Example would be
+Please enter radius of a circle
+19
+Perimeter of a circle is 119.38052083641213
+*/
+
+3.Calculate Rectangle Area using Java Example
+=============================================
+/*
+        Calculate Rectangle Area using Java Example
+        This Calculate Rectangle Area using Java Example shows how to calculate
+        area of Rectangle using it's length and width.
+*/
+ 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+ 
+public class CalculateRectArea {
+ 
+        public static void main(String[] args) {
+               
+                int width = 0;
+                int length = 0;
+                       
+                try
+                {
+                        //read the length from console
+                        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                       
+                        System.out.println("Please enter length of a rectangle");
+                        length = Integer.parseInt(br.readLine());
+ 
+                        //read the width from console
+                        System.out.println("Please enter width of a rectangle");
+                        width = Integer.parseInt(br.readLine());
+                       
+                       
+                }
+                //if invalid value was entered
+                catch(NumberFormatException ne)
+                {
+                        System.out.println("Invalid value" + ne);
+                        System.exit(0);
+                }
+                catch(IOException ioe)
+                {
+                        System.out.println("IO Error :" + ioe);
+                        System.exit(0);
+                }
+               
+                /*
+                 * Area of a rectangle is
+                 * length * width
+                */
+               
+                int area = length * width;
+               
+                System.out.println("Area of a rectangle is " + area);
+        }
+               
+}
+ 
+/*
+Output of Calculate Rectangle Area using Java Example would be
+Please enter length of a rectangle
+10
+Please enter width of a rectangle
+15
+Area of a rectangle is 150
+*/
+
+4.Calculate Rectangle Perimeter using Java Example
+==================================================
+/*
+        Calculate Rectangle Perimeter using Java Example
+        This Calculate Rectangle Perimeter using Java Example shows how to calculate
+        perimeter of Rectangle using it's length and width.
+*/
+ 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+ 
+public class CalculateRectPerimeter {
+ 
+        public static void main(String[] args) {
+               
+                int width = 0;
+                int length = 0;
+                       
+                try
+                {
+                        //read the length from console
+                        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                       
+                        System.out.println("Please enter length of a rectangle");
+                        length = Integer.parseInt(br.readLine());
+ 
+                        //read the width from console
+                        System.out.println("Please enter width of a rectangle");
+                        width = Integer.parseInt(br.readLine());
+                       
+                       
+                }
+                //if invalid value was entered
+                catch(NumberFormatException ne)
+                {
+                        System.out.println("Invalid value" + ne);
+                        System.exit(0);
+                }
+                catch(IOException ioe)
+                {
+                        System.out.println("IO Error :" + ioe);
+                        System.exit(0);
+                }
+               
+                /*
+                 * Perimeter of a rectangle is
+                 * 2 * (length + width)
+                */
+               
+                int perimeter = 2 * (length + width);
+               
+                System.out.println("Perimeter of a rectangle is " + perimeter);
+        }
+               
+}
+ 
+/*
+Output of Calculate Rectangle Perimeter using Java Example would be
+Please enter length of a rectangle
+10
+Please enter width of a rectangle
+15
+Perimeter of a rectangle is 50
+*/
+
+5.Even Odd Number Example
+=========================
+/*
+  Even Odd Number Example
+  This Java Even Odd Number Example shows how to check if the given
+  number is even or odd.
+*/
+ 
+public class FindEvenOrOddNumber {
+ 
+        public static void main(String[] args) {
+               
+                //create an array of 10 numbers
+                int[] numbers = new int[]{1,2,3,4,5,6,7,8,9,10};
+               
+                for(int i=0; i < numbers.length; i++){
+                       
+                        /*
+                         * use modulus operator to check if the number is even or odd. 
+                         * If we divide any number by 2 and reminder is 0 then the number is
+                         * even, otherwise it is odd.
+                         */
+                         
+                         if(numbers[i]%2 == 0)
+                                System.out.println(numbers[i] + " is even number.");
+                         else
+                                System.out.println(numbers[i] + " is odd number.");
+                               
+                }
+               
+        }
+}
+ 
+/*
+Output of the program would be
+1 is odd number.
+2 is even number.
+3 is odd number.
+4 is even number.
+5 is odd number.
+6 is even number.
+7 is odd number.
+8 is even number.
+9 is odd number.
+10 is even number.
+*/
+
+6.Find Largest and Smallest Number in an Array Example
+======================================================
+/*
+  Find Largest and Smallest Number in an Array Example
+  This Java Example shows how to find largest and smallest number in an
+  array.
+*/
+public class FindLargestSmallestNumber {
+ 
+        public static void main(String[] args) {
+               
+                //array of 10 numbers
+                int numbers[] = new int[]{32,43,53,54,32,65,63,98,43,23};
+               
+                //assign first element of an array to largest and smallest
+                int smallest = numbers[0];
+                int largetst = numbers[0];
+               
+                for(int i=1; i< numbers.length; i++)
+                {
+                        if(numbers[i] > largetst)
+                                largetst = numbers[i];
+                        else if (numbers[i] < smallest)
+                                smallest = numbers[i];
+                       
+                }
+               
+                System.out.println("Largest Number is : " + largetst);
+                System.out.println("Smallest Number is : " + smallest);
+        }
+}
+ 
+/*
+Output of this program would be
+Largest Number is : 98
+Smallest Number is : 23
+*/
+
+7.Hello World example
+=====================
+/*
+Java Hello World example.
+*/
+ 
+public class HelloWorldExample{
+ 
+  public static void main(String args[]){
+ 
+    /*
+    Use System.out.println() to print on console.
+    */
+    System.out.println("Hello World !");
+ 
+  }
+ 
+}
+ 
+/*
+ 
+OUTPUT of the above given Java Hello World Example would be :
+ 
+Hello World !
+ 
+*/
+
+8.Java Class Example
+====================
+/*
+Java Class example.
+This Java class example describes how class is defined and being used
+in Java language.
+ 
+Syntax of defining java class is,
+<modifier> class <class-name>{
+  // members and methods
+}
+*/
+ 
+public class JavaClassExample{
+  /*
+  Syntax of defining memebers of the java class is,
+    <modifier> type <name>;
+  */
+  private String name;
+  /*
+  Syntax of defining methods of the java class is,
+  <modifier> <return-type> methodName(<optional-parameter-list>) <exception-list>{
+                    ...
+  }
+  */
+  public void setName(String n){
+    //set passed parameter as name
+    name = n;
+  }
+  public String getName(){
+    //return the set name
+    return name;
+  }
+  //main method will be called first when program is executed
+  public static void main(String args[]){
+    /*
+    Syntax of java object creation is,
+    <class-name> object-name = new <class-constructor>;
+    */
+    JavaClassExample javaClassExample = new JavaClassExample();
+    //set name member of this object
+    javaClassExample.setName("Visitor");
+    // print the name
+    System.out.println("Hello " + javaClassExample.getName());      
+  }
+}
+ 
+/*
+OUTPUT of the above given Java Class Example would be :
+Hello Visitor
+*/
+
+9.Java Factorial Example
+=======================
+/*
+  Java Factorial Example
+  This Java Factorial Example shows how to calculate factorial of
+  a given number using Java.
+*/
+ 
+public class NumberFactorial {
+ 
+        public static void main(String[] args) {
+               
+                int number = 5;
+               
+                /*
+                 * Factorial of any number is !n.
+                 * For example, factorial of 4 is 4*3*2*1.
+                */
+               
+                int factorial = number;
+               
+                for(int i =(number - 1); i > 1; i--)
+                {
+                        factorial = factorial * i;
+                }
+       
+                System.out.println("Factorial of a number is " + factorial);
+        }
+}
+ 
+/*
+Output of the Factorial program would be
+Factorial of a number is 120
+*/
+10.Java Factorial Using Recursion Example
+=========================================
+/*
+        Java Factorial Using Recursion Example
+        This Java example shows how to generate factorial of a given number
+        using recursive function.
+*/
+ 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+ 
+public class JavaFactorialUsingRecursion {
+       
+        public static void main(String args[]) throws NumberFormatException, IOException{
+               
+                System.out.println("Enter the number: ");
+               
+                //get input from the user
+                BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+                int a = Integer.parseInt(br.readLine());
+               
+                //call the recursive function to generate factorial
+                int result= fact(a);
+               
+               
+                System.out.println("Factorial of the number is: " + result);
+        }
+       
+        static int fact(int b)
+        {
+                if(b <= 1)
+                        //if the number is 1 then return 1
+                        return 1;
+                else
+                        //else call the same function with the value - 1
+                        return b * fact(b-1);
+        }
+}
+ 
+/*
+Output of this Java example would be
+ 
+Enter the number:
+5
+Factorial of the number is: 120
+*/
+
+11.Java Interface Example
+=========================
+/*
+Java Interface example.
+This Java Interface example describes how interface is defined and
+being used in Java language.
+ 
+Syntax of defining java interface is,
+<modifier> interface <interface-name>{
+  //members and methods()
+}
+*/
+ 
+//declare an interface
+interface IntExample{
+ 
+  /*
+  Syntax to declare method in java interface is,
+  <modifier> <return-type> methodName(<optional-parameters>);
+  IMPORTANT : Methods declared in the interface are implicitly public and abstract.
+  */
+ 
+  public void sayHello();
+  }
+}
+/*
+Classes are extended while interfaces are implemented.
+To implement an interface use implements keyword.
+IMPORTANT : A class can extend only one other class, while it
+can implement n number of interfaces.
+*/
+ 
+public class JavaInterfaceExample implements IntExample{
+  /*
+  We have to define the method declared in implemented interface,
+  or else we have to declare the implementing class as abstract class.
+  */
+ 
+  public void sayHello(){
+    System.out.println("Hello Visitor !");
+  }
+ 
+  public static void main(String args[]){
+    //create object of the class
+    JavaInterfaceExample javaInterfaceExample = new JavaInterfaceExample();
+    //invoke sayHello(), declared in IntExample interface.
+    javaInterfaceExample.sayHello();
+  }
+}
+ 
+/*
+OUTPUT of the above given Java Interface example would be :
+Hello Visitor !
+*/
+
+12.Reverse Number using Java
+============================
+/*
+  Reverse Number using Java
+  This Java Reverse Number Example shows how to reverse a given number.
+*/
+ 
+public class ReverseNumber {
+ 
+        public static void main(String[] args) {
+               
+                //original number
+                int number = 1234;
+                int reversedNumber = 0;
+                int temp = 0;
+               
+                while(number > 0){
+                       
+                        //use modulus operator to strip off the last digit
+                        temp = number%10;
+                       
+                        //create the reversed number
+                        reversedNumber = reversedNumber * 10 + temp;
+                        number = number/10;
+                         
+                }
+               
+                //output the reversed number
+                System.out.println("Reversed Number is: " + reversedNumber);
+        }
+}
+ 
+/*
+Output of this Number Reverse program would be
+Reversed Number is: 4321
+*/
+
+13.Swap Numbers Java Example
+============================
+/*
+        Swap Numbers Java Example
+        This Swap Numbers Java Example shows how to
+        swap value of two numbers using java.
+*/
+ 
+public class SwapElementsExample {
+ 
+        public static void main(String[] args) {
+               
+                int num1 = 10;
+                int num2 = 20;
+               
+                System.out.println("Before Swapping");
+                System.out.println("Value of num1 is :" + num1);
+                System.out.println("Value of num2 is :" +num2);
+               
+                //swap the value
+                swap(num1, num2);
+        }
+ 
+        private static void swap(int num1, int num2) {
+               
+                int temp = num1;
+                num1 = num2;
+                num2 = temp;
+               
+                System.out.println("After Swapping");
+                System.out.println("Value of num1 is :" + num1);
+                System.out.println("Value of num2 is :" +num2);
+               
+        }
+}
+ 
+/*
+Output of Swap Numbers example would be
+Before Swapping
+Value of num1 is :10
+Value of num2 is :20
+After Swapping
+Value of num1 is :20
+Value of num2 is :10
+*/
+
+14.Swap Numbers Without Using Third Variable Java Example
+===========================================================
+/*
+        Swap Numbers Without Using Third Variable Java Example
+        This Swap Numbers Java Example shows how to
+        swap value of two numbers without using third variable using java.
+*/
+ 
+public class SwapElementsWithoutThirdVariableExample {
+ 
+        public static void main(String[] args) {
+               
+                int num1 = 10;
+                int num2 = 20;
+               
+                System.out.println("Before Swapping");
+                System.out.println("Value of num1 is :" + num1);
+                System.out.println("Value of num2 is :" +num2);
+               
+                //add both the numbers and assign it to first
+                num1 = num1 + num2;
+                num2 = num1 - num2;
+                num1 = num1 - num2;
+               
+                System.out.println("Before Swapping");
+                System.out.println("Value of num1 is :" + num1);
+                System.out.println("Value of num2 is :" +num2);
+        }
+ 
+ 
+}
+ 
+/*
+Output of Swap Numbers Without Using Third Variable example would be
+Before Swapping
+Value of num1 is :10
+Value of num2 is :20
+Before Swapping
+Value of num1 is :20
+Value of num2 is :10
+*/
