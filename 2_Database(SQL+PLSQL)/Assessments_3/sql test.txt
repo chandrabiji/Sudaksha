@@ -1,0 +1,42 @@
+
+table1
+id	name	score	subject
+1	ravi	10	science
+2	raju	15	science
+3	david	20	science
+4	jon	25	science
+5	ravi	5	maths
+6	raju	10	maths
+7	david	15	maths
+
+output:
+name	totalmarks	science		maths
+ravi	15		10		5
+raju	25		15		10			
+david	35		20		15
+jon	25		25		0		
+
+
+solution is**
+create view marksvu
+as
+SELECT   [name], [maths], [science]
+FROM  [dbo].[t1] 
+PIVOT
+(
+       SUM(score)
+       FOR [subject] IN ([maths], [science])
+	   
+) AS P
+
+select * from marksvu
+
+create view marksvu1
+as
+select name,isnull(science,0)as science,isnull(maths,0) as maths from marksvu
+
+create view marksvu2
+as
+select name,sum(science) as science,sum(maths) as maths,sum(maths+science) as totalscore from marksvu1 group by name
+
+select * from marksvu2

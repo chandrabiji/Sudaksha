@@ -1,0 +1,15 @@
+
+
+1).create a procedure to display the employee information
+ who are hired before there manager(from employees table)
+2).create a procedure to display the how many years difference 
+   is are there for given date.(use in parameters)
+3).procedure to display how many number of employees
+present in the given departmenent.(use in and out parameters)
+4).create a procedure to display number of jobs in 
+	   given department
+	(if departmentid not p resent in the table 
+	use appropriate exeption handling).(use in and out parameters)
+	
+5).create a procedure to display maximum number of employees prsent in which department.
+

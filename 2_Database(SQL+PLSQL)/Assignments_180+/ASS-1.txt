@@ -1,0 +1,7 @@
+1.Pine Valley Furniture company data model.
+
+	Pine Valley is a furniture manufacturing company. This company is using traditional file processing based information systems. To face the intensified competition in furniture making this company opted for changing to database approach. At the first step in this conversion the following high-level entities are identified:	CUSTOMER, PRODUCT, EMPLOYEE, CUSTOMER ORDER, DEPARTMENT
+
+     You can find related attributes and design E-R MODELING AND LOGICAL DATABASE DESING.
+
+
