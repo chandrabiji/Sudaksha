@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.sudaksha.jdbc</groupId>
+	<artifactId>Jdbc_Day1</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Chandra Java Trainer</name>
+	<description>JDBC Applications First Day</description>
+	<dependencies>
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>oracle</artifactId>
+			<scope>system</scope>
+			<version>10.2.0</version>
+			<systemPath>C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14_g.jar</systemPath>
+		</dependency>
+	</dependencies>
+</project>
